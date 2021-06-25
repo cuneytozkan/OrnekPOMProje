@@ -28,7 +28,7 @@ public abstract class TestBaseRapor {
         // İstediğiniz bilgileri buraya ekeyebiliyorsunuz.
         extentReports.setSystemInfo("Enviroment","QA");
         extentReports.setSystemInfo("Browser", ConfigReader.getProperty("browser")); // chrome, firefox
-        extentReports.setSystemInfo("Automation Engineer", "Mehmet");
+        extentReports.setSystemInfo("Automation Engineer", "cuneyt");
         extentHtmlReporter.config().setDocumentTitle("amazon Arama Testi");
         extentHtmlReporter.config().setReportName("amazon Arama Automation Reports");
     }

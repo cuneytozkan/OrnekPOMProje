@@ -7,21 +7,28 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-import javax.print.attribute.standard.ReferenceUriSchemesSupported;
 import java.util.List;
 
 public class D22_ReusableMethodsWebList {
+
+
     @Test
     public void test01(){
+
         Driver.getDriver().get(ConfigReader.getProperty("amazon_url"));
-        AmazonPage amazonPage = new AmazonPage();
-        List<WebElement> tumDataWebelement = amazonPage.tumDataWebelementList;
 
-        System.out.println(ReusableMethods.getElementsText(tumDataWebelement));
+        AmazonPage amazonPage=new AmazonPage();
+        List<WebElement> tumDatalarWebelement = amazonPage.tumDataWebelementList;
 
-        System.out.println("====================================");
-        System.out.println(ReusableMethods.getElementsText(amazonPage.tumDataWebelementList ));
+        System.out.println(ReusableMethods.getElementsText(tumDatalarWebelement));
 
+
+        System.out.println("===================");
+
+
+        System.out.println(ReusableMethods.getElementsText(amazonPage.tumDataWebelementList));
 
     }
+
+
 }
