@@ -3,7 +3,7 @@
 
     <test name="sirali method">
         <classes>
-            <class name="tests.D23_HomeworkAmazon">
+            <class name="tests.D23_HomeworkSatirSayisi">
                 <methods>
                     <include name="AmazonYazisi"></include>
                 </methods>
